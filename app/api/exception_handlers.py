@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
+
 from app.shared.errors.base import ApplicationError
 from app.shared.logging.logger import get_logger
 

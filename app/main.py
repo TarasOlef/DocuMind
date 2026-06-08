@@ -1,8 +1,9 @@
 from fastapi import FastAPI
+
+from app.api.exception_handlers import add_exception_handlers
+from app.api.router import api_router
 from app.shared.config.settings import settings
 from app.shared.logging.logger import setup_logging
-from app.api.router import api_router
-from app.api.exception_handlers import add_exception_handlers
 
 # Setup global logging
 setup_logging()

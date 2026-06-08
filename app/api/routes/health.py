@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from app.api.schemas.health import HealthResponse
 from app.shared.config.settings import settings
 

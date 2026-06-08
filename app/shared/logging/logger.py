@@ -1,5 +1,7 @@
 import logging
+
 from app.shared.config.settings import settings
+
 
 def setup_logging() -> None:
     logging.basicConfig(
