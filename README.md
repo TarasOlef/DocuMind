@@ -59,7 +59,7 @@ documind-ai/
 ```
 
 ## Estado del proyecto
-Fase inicial / bootstrap. Se ha configurado la base, pero aún no se han implementado entidades del dominio ni el motor RAG.
+Fase 2 completada (Domain Model puro). Se han definido las entidades, value objects, ports y excepciones libres de infraestructura. Aún falta implementar la persistencia y casos de uso.
 
 ## Ejecución local con Docker
 
@@ -91,8 +91,9 @@ pytest
 
 ## Roadmap
 - [x] Phase 1: Bootstrap backend (FastAPI, Clean Architecture, Docker, CI base).
-- [ ] Phase 2: Auth y persistencia base.
-- [ ] Phase 3: Gestión de Documents.
-- [ ] Phase 4: Document Processing & Embeddings.
-- [ ] Phase 5: RAG y generación de respuestas.
-- [ ] Phase 6: Audit logs y refactor avanzado.
+- [x] Phase 2: Domain Layer puro (Entidades, Value Objects, Ports, Domain Exceptions).
+- [ ] Phase 3: Application & Infra (Auth, Persistencia real con SQLAlchemy/Alembic).
+- [ ] Phase 4: Gestión de Documents.
+- [ ] Phase 5: Document Processing & Embeddings.
+- [ ] Phase 6: RAG y generación de respuestas con Trazabilidad.
+- [ ] Phase 7: Audit logs y refactor avanzado.
